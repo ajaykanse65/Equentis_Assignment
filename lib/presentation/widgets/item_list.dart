@@ -23,37 +23,15 @@ class TaskItem extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         elevation: 2,
         child: ListTile(
-          contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-          title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                task.title,
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  decoration: task.isDone ? TextDecoration.lineThrough : null,
+          contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2),
+          title: Text(
+            task.title,
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+              decoration: task.isDone ? TextDecoration.lineThrough : null,
 
-                ),
-              ),
-              if (task.description.isNotEmpty) ...[
-                const SizedBox(height: 4),
-                Text(
-                  task.description,
-                  style: TextStyle(
-                    fontSize: 14,
-                  ),
-                ),
-              ],
-              const SizedBox(height: 6),
-              Text(
-                'Due: ${StringFormat.formatDate(task.dueDate)}',
-                style: TextStyle(
-                  color: Colors.grey[600],
-                  fontSize: 12,
-                ),
-              ),
-            ],
+            ),
           ),
           trailing: GestureDetector(
             onTap: () {
