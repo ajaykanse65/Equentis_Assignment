@@ -1,16 +1,86 @@
-# equentis_assignment
 
-A new Flutter project.
+# 📝 Task Manager App
 
-## Getting Started
+A simple **Task Manager App** built with **Flutter + Bloc + Hive** — manage your tasks with a beautiful UI and persistent local storage.
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+✅ Add / Edit / Delete Tasks  
+✅ Mark Tasks as Done / Pending  
+✅ Filter Tasks → All / Done / Pending (using Chips)  
+✅ Persistent Storage (Hive local DB)  
+✅ Light / Dark Theme Toggle  
+✅ Modern UI with Smooth Animations  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📂 Project Structure
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+lib/
+├── data/           # Models & Repositories (Hive)
+│   ├── models/
+│   ├── repositories/
+├── logic/          # Bloc & Cubit
+│   ├── bloc/
+│   ├── cubit/
+├── ui/             # Pages & Widgets
+│   ├── pages/
+│   ├── widgets/
+└── main.dart       # App Entry Point
+```
+
+## ⚙ Setup & Run
+
+### 1️⃣ Clone this repo
+
+```bash
+git clone <your-repo-url>
+cd <your-repo-folder>
+```
+
+### 2️⃣ Install packages
+
+```bash
+flutter pub get
+```
+
+### 3️⃣ Generate Hive Adapter (if not already generated)
+
+```bash
+flutter packages pub run build_runner build
+```
+
+### 4️⃣ Run the app
+
+```bash
+flutter run
+```
+
+## 🖼 Screenshots
+
+| Home Page with Filter | Add/Edit Task |
+|-----------------------|---------------|
+| Coming soon           | Coming soon   |
+
+## 🛠 Tech Stack
+
+- **Flutter**  
+- **Hive** for local storage  
+- **Bloc** for state management  
+- **ThemeCubit** for light/dark mode  
+
+## 🎨 UI Highlights
+
+- AppBar with theme switcher  
+- Filter chips: All | Done | Pending  
+- Task List with modern animated cards  
+- Add/Edit Task with Date Picker  
+- FloatingActionButton with label  
+
+## 🙌 Author
+
+**Ajay Kanase**  
+[GitHub Profile](https://github.com/ajaykanase) <!-- you can edit this link -->
+
+---
+
+**Enjoy and Happy Coding! 🚀**
