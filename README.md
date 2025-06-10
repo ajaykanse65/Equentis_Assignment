@@ -33,8 +33,8 @@ lib/
 ### 1️⃣ Clone this repo
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone <[your-repo-url](https://github.com/ajaykanse65/Equentis_Assignment.git)>
+cd <equentis_assignment>
 ```
 
 ### 2️⃣ Install packages
@@ -55,12 +55,6 @@ flutter packages pub run build_runner build
 flutter run
 ```
 
-## 🖼 Screenshots
-
-| Home Page with Filter | Add/Edit Task |
-|-----------------------|---------------|
-| Coming soon           | Coming soon   |
-
 ## 🛠 Tech Stack
 
 - **Flutter**  
@@ -79,8 +73,6 @@ flutter run
 ## 🙌 Author
 
 **Ajay Kanase**  
-[GitHub Profile](https://github.com/ajaykanase) <!-- you can edit this link -->
+[GitHub Profile](https://github.com/ajaykanse65)
 
----
 
-**Enjoy and Happy Coding! 🚀**
